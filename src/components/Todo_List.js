@@ -53,7 +53,7 @@ const TodoList = () => {
       const remTasks = tasks.filter((val) => val.id  !== task.id);
       setTasks([...remTasks]);
       await fetch(`https://jsonplaceholder.typicode.com/posts/${task.id}`, {
-                  method: 'DELETE',
+            method: 'DELETE',
       });
     }
 
