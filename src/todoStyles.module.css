@@ -1,0 +1,67 @@
+body{
+    background-color: blueviolet;
+}
+.todo_item{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0.5% 0.5% 0 0.5%;
+    margin-top: 10px; 
+    background-color: whitesmoke;
+}
+.todo_heading{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+.addTodo {
+  position: relative;
+  width: 73%;
+  margin: auto;
+  margin-bottom: 5%; 
+}
+.addTodo input{
+    width: 100%;
+    padding: 1.5% 0 1.5% 1.5%;
+    border-radius: 10px;
+    height: 25px;
+    outline: none;
+    border: none;
+}
+
+.addIcon img{
+    height: 25px;
+    width: auto;
+    position: absolute; 
+    right: 0;
+    top: 30%;
+    transition-property: height,top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    border-radius: 5px;
+}
+
+.addIcon img:hover{
+    width: auto;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.deleteIcon img{
+    height: 25px;
+    width: auto;
+    position: relative;
+    top:20%; 
+    border-radius: 15px;
+    transition: width,height 0.3s ease-in-out;
+}
+
+.deleteIcon img:hover {
+    width: auto;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
